@@ -1,0 +1,184 @@
+<div ng-controller="homeCtrl">
+    <div class="banner">
+        <div class="swiper-container content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="static/img/banner.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/img/banner.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/img/banner.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/img/banner.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="list">
+        <dl>
+            <dt style="background:#ff6666">
+                <i class="fa fa-home"></i>
+            </dt>
+            <dd>车商城</dd>
+        </dl>
+        <dl>
+            <dt style="background:#ff9d3e">
+                <i class="fa fa-home"></i>
+            </dt>
+            <dd>分期购车</dd>
+        </dl>
+        <dl>
+            <dt style="background:#ff6666">
+                <i class="fa fa-home"></i>
+            </dt>
+            <dd>团购活动</dd>
+        </dl>
+        <dl>
+            <dt style="background:#4183ff">
+                <i class="fa fa-home"></i>
+            </dt>
+            <dd>找二手车</dd>
+        </dl>
+    </div>
+    <div class="maintain">
+        <img src="static/img/maintain.jpg" alt="">
+    </div>
+    <div class="server">
+        <h1>车主服务</h1>
+        <ul>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>油卡充值</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>低价保险</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>4S店保养</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>品质轮胎</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>车品商城</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>洗车</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>违章代缴</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>免费测评</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>查周边</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>车主卡</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>领券保养</sapn>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <sapn>全部</sapn>
+            </li>
+        </ul>
+    </div>
+    <div class="purchase">
+        <h1>限时抢购</h1>
+        <div class="con-purchase-wrap iscrollwrap">
+            <div class="scroller">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="static/img/pic1.jpg" alt="">
+                            </dt>
+                            <dd>
+                                <h2>补胎工具简易套装</h2>
+                                <p>
+                                    <span>￥9.9元</span>
+                                    <span>28元</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="static/img/pic1.jpg" alt="">
+                            </dt>
+                            <dd>
+                                <h2>补胎工具简易套装</h2>
+                                <p>
+                                    <span>￥9.9元</span>
+                                    <span>28元</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="static/img/pic1.jpg" alt="">
+                            </dt>
+                            <dd>
+                                <h2>补胎工具简易套装</h2>
+                                <p>
+                                    <span>￥9.9元</span>
+                                    <span>28元</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="static/img/pic1.jpg" alt="">
+                            </dt>
+                            <dd>
+                                <h2>补胎工具简易套装</h2>
+                                <p>
+                                    <span>￥9.9元</span>
+                                    <span>28元</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="like">
+        <h1>猜你喜欢 <em ng-click="fn()">更多</em></h1>
+        <ul ng-repeat="items in data">
+            <li ng-repeat="item in items">
+                <dl>
+                    <dt><img ng-src="{{item.src}}" alt=""></dt>
+                    <dd>
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.info}}</p>
+                        <b>{{item.price}}</b>
+                        <span>{{item.oldprice}}</span>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
